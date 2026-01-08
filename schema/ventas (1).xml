@@ -1,0 +1,30 @@
+<Schema name="New Schema1">
+  <Cube name="Ventas" visible="true" cache="true" enabled="true">
+    <Table name="fact_ventas">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="producto_id" highCardinality="false" name="Producto">
+      <Hierarchy visible="true" hasAll="true" primaryKey="id">
+        <Table name="dim_producto">
+        </Table>
+        <Level name="Categoria" visible="true" table="dim_producto" column="categoria" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Nombre" visible="true" column="nombre" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="pais_id" highCardinality="false" name="Geografia">
+      <Hierarchy visible="true" hasAll="true" primaryKey="id">
+        <Table name="dim_pais">
+        </Table>
+        <Level name="Region" visible="true" column="region" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Pais" visible="true" column="pais" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Ventas Totales" column="total_dinero" formatString="$#,###.00" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Cantidad" column="cantidad" formatString="$#,###.00" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
