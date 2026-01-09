@@ -75,7 +75,14 @@ El modelo fue diseñado para optimizar el rendimiento de consultas analíticas.
 * Pentaho BI Server 
 * JDBC Driver PostgreSQL (42.x.x): Es necesario para conectar la base que está en la nube con nuestro sistema local 
 * MDX 
-* SQL estándar 
+* SQL estándar
+
+---
+## 🎬 Video de Muestra
+
+En este video se muestra como hacer compatible la descarga de las versiones para poder hacer un cubo de datos alojado en neonDB.
+
+*  **Link:** https://www.youtube.com/watch?v=6N6mTo5cp7g
 
 ---
 ## ⚙️ Instalación y configuración 
