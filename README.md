@@ -7,6 +7,19 @@ Este repositorio contiene el proyecto final de Bases de Datos, cuyo objetivo es 
 El proyecto permite analizar información de ventas desde una perspectiva multidimensional, facilitando consultas analíticas como totales por categoría, región, país y rankings de productos mediante MDX. 
 
 ---
+
+## 📚 Estructura del repositorio 
+```bash
+├── sql/ 
+│   └── base.sql 
+├── schema/ 
+│   └── ventas.xml 
+├── docs/ 
+│   └── Documentacion_Pentaho_Neon.pdf 
+└── README.md 
+```
+
+---
 ## 🧠 Arquitectura general 
 
 La solución sigue una arquitectura clásica de Business Intelligence: 
@@ -204,18 +217,7 @@ FROM [Ventas]
 4. Visualizamos nuestros datos de la consulta MDX. 
 
 ---
-## 📚 Estructura del repositorio 
-```bash
-├── sql/ 
-│   └── base.sql 
-├── schema/ 
-│   └── ventas.xml 
-├── docs/ 
-│   └── Documentacion_Pentaho_Neon.pdf 
-└── README.md 
-```
 
----
 ## 📖 Documentación adicional 
 
 La documentación técnica completa se encuentra en: 
@@ -411,7 +413,7 @@ Proyecto desarrollado por:
 
 * Cruz Guzmán Carlos Alberto 
 * De La Rosa Hernández Tania 
-* Delgadillo Diaz Damián 
+* Delgadillo Díaz Damián 
 * González González Erick Emiliano 
 * González Hernández Judith 
 * Magaña Fierro Elka Natalia 
