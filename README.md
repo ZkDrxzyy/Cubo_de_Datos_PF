@@ -141,6 +141,10 @@ Neon requiere conexiones SSL así que dentro del menú de connection busca el ap
 
 Con todo lo anterior realizado probamos la conexión con el botón test que se encuentra abajo del menú, si es correcta podemos aceptar la configuración y seguir con el siguiente paso. 
 
+<div align="center">
+<img width="617" height="913" alt="1" src="https://github.com/user-attachments/assets/88d81a6d-f1ad-40fb-bda5-30936f448c76" />
+</div>
+
 ---
 ## 🧩 Diseño del Cubo OLAP 
 
@@ -166,6 +170,10 @@ Geografía
 * FK: pais_id 
 
 ⚠️ Nota: La dimensión Tiempo fue omitida para evitar conflictos iniciales entre Mondrian y PostgreSQL. 
+
+<div align="center">
+<img width="617" height="913" alt="1" src="https://github.com/user-attachments/assets/9a581f98-a0ca-4689-97d3-67421bb13210" />
+</div>
 
 ---
 ## 📊 Consultas MDX implementadas 
@@ -214,6 +222,10 @@ SELECT
   TopCount({[Producto].[Nombre].Members}, 3, [Measures].[Cantidad]) ON ROWS 
 FROM [Ventas] 
 ~~~
+
+<div align="center">
+<img width="617" height="913" alt="1" src="https://github.com/user-attachments/assets/bc1f07a6-e888-4204-983d-cdf13722480e" />
+</div>
 
 ---
 ## ▶️ Ejecución y uso 
@@ -429,5 +441,9 @@ Proyecto desarrollado por:
 
 ---
 Materia: Bases de Datos 
+
+
+
+
 
  
